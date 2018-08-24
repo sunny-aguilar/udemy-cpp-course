@@ -2,12 +2,12 @@
 ** Author:          Sandro Aguilar
 ** Date:            July 26, 2018
 ** Description:     5. Given a vector of integers named vec, find the
-**                  sum of the of the product of all pairs. For example,
-**                  given vector vec to be {1,2,3}, the possible pairs 
-**                  are (1,2), (1,3), and (2,3). So the result would 
-**                  be (1*2) + (1*3) + (2*3) which is eleven. If the
-**                  vector is empty or has only 1 element, then the
-**                  result should be 0;
+**                  sum of the of the product of all pairs. For 
+**                  example, given vector vec to be {1,2,3}, the  
+**                  possible pairs are (1,2), (1,3), and (2,3). So the 
+**                  result would be (1*2) + (1*3) + (2*3) which is 
+**                  eleven. If the vector is empty or has only 1 
+**                  element, then the result should be 0;
 *********************************************************************/
 #include <iostream>
 #include <vector>
