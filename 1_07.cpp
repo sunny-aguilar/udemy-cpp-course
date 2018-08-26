@@ -1,9 +1,9 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            July 26, 2018
-** Description:     7. Move constructor
-**
-**
+** Date:            August 26, 2018
+** Description:     7. Move constructor - a move constructor is 
+**                  implemented to improve the efficiency of the copy
+**                  constructor when using r-values.
 *********************************************************************/
 #include <iostream>
 #include <string>
