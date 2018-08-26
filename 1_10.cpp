@@ -2,8 +2,7 @@
 ** Author:          Sandro Aguilar
 ** Date:            August 26, 2018
 ** Description:     10. Using constructor with default arguments
-**
-**
+**                  reduce the need for multiple constructors.
 *********************************************************************/
 #include <iostream>
 #include <string>
