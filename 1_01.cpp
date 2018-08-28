@@ -1,7 +1,7 @@
 /********************************************************************* 
 ** Author:          Sandro Aguilar
 ** Date:            August 22, 2018
-** Description:     Practice initializing vectors
+** Description:     Practice initializing vectors 
 *********************************************************************/
 #include <iostream>
 #include <vector>
