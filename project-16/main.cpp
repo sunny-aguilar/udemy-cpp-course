@@ -1,7 +1,7 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            September 2, 2018
-** Description:     
+** Description:
 **
 *********************************************************************/
 #include <iostream>
@@ -9,11 +9,12 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-class Account {
+class Account {                 // base class
     public:
-        virtual void withdraw(double amount) {
+        virtual void withdraw(double amount) {      // virtual function
             cout << "In Account::withdraw" << endl;
         }
+        // virtual destructor
         virtual ~Account() { cout << "Account::Destructor" << endl; };
 };
 
