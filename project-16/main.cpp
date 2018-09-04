@@ -34,7 +34,7 @@ class Savings: public Account {     // derived class
         virtual ~Savings() { cout << "Savings::Destructor" << endl; };
 };
 
-class Trust: public Account {
+class Trust: public Account {       // derived class
     public:
         virtual void withdraw(double amount) override {
             cout << "In Trust::withdraw" << endl;
