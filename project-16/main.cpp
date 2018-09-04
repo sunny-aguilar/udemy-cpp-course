@@ -9,7 +9,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-class Account {                 // base class
+class Account {     // base class
     public:
         virtual void withdraw(double amount) {      // virtual function
             cout << "In Account::withdraw" << endl;
@@ -18,7 +18,7 @@ class Account {                 // base class
         virtual ~Account() { cout << "Account::Destructor" << endl; };
 };
 
-class Checking: public Account {
+class Checking: public Account {    // derived class
     public:
         virtual void withdraw(double amount) override {
             cout << "In Checking::withdraw" << endl;
