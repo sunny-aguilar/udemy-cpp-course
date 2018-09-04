@@ -26,7 +26,7 @@ class Checking: public Account {    // derived class
         virtual ~Checking() { cout << "Checking::Destructor" << endl; };
 };
 
-class Savings: public Account {
+class Savings: public Account {     // derived class
     public:
         virtual void withdraw(double amount) override {
             cout << "In Savings::withdraw" << endl;
