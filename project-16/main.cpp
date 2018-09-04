@@ -1,7 +1,7 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            September 2, 2018
-** Description:
+** Description:     Virtual functions with override specified
 **
 *********************************************************************/
 #include <iostream>
@@ -20,7 +20,7 @@ class Account {                 // base class
 
 class Checking: public Account {
     public:
-        virtual void withdraw(double amount) {
+        virtual void withdraw(double amount) override {
             cout << "In Checking::withdraw" << endl;
         }
         virtual ~Checking() { cout << "Checking::Destructor" << endl; };
@@ -28,7 +28,7 @@ class Checking: public Account {
 
 class Savings: public Account {
     public:
-        virtual void withdraw(double amount) {
+        virtual void withdraw(double amount) override {
             cout << "In Savings::withdraw" << endl;
         }
         virtual ~Savings() { cout << "Savings::Destructor" << endl; };
@@ -36,7 +36,7 @@ class Savings: public Account {
 
 class Trust: public Account {
     public:
-        virtual void withdraw(double amount) {
+        virtual void withdraw(double amount) override {
             cout << "In Trust::withdraw" << endl;
         }
         virtual ~Trust() { cout << "Trust::Destructor" << endl; };
