@@ -18,7 +18,6 @@ T smallest(T arr[], int size) {
         if (arr[i] < small)
             small = arr[i];
     }
-
     return small;
 }
 
