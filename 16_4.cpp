@@ -1,4 +1,6 @@
-//
-// Created by Sandro Aguilar on 9/13/18.
-//
+/*********************************************************************
+** Author:          Sandro Aguilar
+** Date:            September 13, 2018
+** Description:     Exceptions, Templates, and the STL
+*********************************************************************/
 
