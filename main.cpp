@@ -1,6 +1,12 @@
+/*********************************************************************
+** Author:          Sandro Aguilar
+** Date:            September 13, 2018
+** Description:     Exceptions, Templates, and the STL
+*********************************************************************/
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
     return 0;
 }
