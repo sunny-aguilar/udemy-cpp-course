@@ -12,14 +12,14 @@ using std::string;
 using std::cerr;
 
 template <typename T>
-T square(T num1, T num2) {
-    return num1 * num2;
+T max(T num1, T num2) {
+    return (num1 > num2) ? num1: num2;
 }
 
 int main() {
     int a = 2;
-    int b = 2;
-    cout << "Square is: " << square(a,b);
+    int b = 3;
+    cout << "Square is: " << max(a,b);
 
     return 0;
 }
