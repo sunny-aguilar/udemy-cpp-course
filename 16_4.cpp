@@ -13,8 +13,6 @@ using std::string;
 int divide(int num, int den);
 
 int main() {
-    int x = 1;
-    int y = 0;
     double quotient{};
 
     try {
