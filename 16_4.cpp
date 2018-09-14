@@ -28,6 +28,8 @@ int main() {
 }
 
 int divide(int num, int den) {
+    // add additional exception here
+    
     if (den == 0)
         throw string("Cannot divide by zero!\n");
     else
