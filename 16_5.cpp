@@ -17,8 +17,9 @@ T square(T num1, T num2) {
 }
 
 int main() {
-
-    cout << "Square is: " << square(2,2);
+    int a = 2;
+    int b = 2;
+    cout << "Square is: " << square<int>(a,b);
 
     return 0;
 }
