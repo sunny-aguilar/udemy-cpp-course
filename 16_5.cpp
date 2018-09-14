@@ -25,7 +25,7 @@ int main() {
     int a =2;
     int b = 3;
 
-    cout << "Multiply: " << multiply(2 , 3) << endl;
+    cout << "Multiply: " << multiply(a , b) << endl;
     double doubleA {1};
     double doubleB {2};
     char charA = 'A';
