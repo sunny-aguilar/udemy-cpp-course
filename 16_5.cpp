@@ -10,3 +10,9 @@ using std::cout;
 using std::endl;
 using std::string;
 using std::cerr;
+
+int main() {
+
+
+    return 0;
+}
