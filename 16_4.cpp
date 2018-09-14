@@ -15,21 +15,23 @@ int divide(int num, int den);
 int main() {
     int x = 1;
     int y = 0;
+    double quotient{};
 
     try {
-        divide(3,4);
+        quotient = divide(3,0);
+        cout << "The answer to the division is: " << quotient<< endl;
     }
     catch (string &ex) {
-
+        std::cerr << ex;
     }
-
+    cout << "Program has completed normal ops" << endl;
 
     return 0;
 }
 
 int divide(int num, int den) {
     if (den == 0)
-        cout << "Can't divide by zero!" << endl;
+        throw string("Cannot divide by zero!\n");
     else
         return num / den;
 }
