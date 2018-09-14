@@ -19,12 +19,17 @@ int main() {
     try {
         divide(3,4);
     }
+    catch (string &ex) {
 
+    }
 
 
     return 0;
 }
 
 int divide(int num, int den) {
-
+    if (den == 0)
+        cout << "Can't divide by zero!" << endl;
+    else
+        return num / den;
 }
