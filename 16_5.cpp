@@ -11,15 +11,28 @@ using std::endl;
 using std::string;
 using std::cerr;
 
-template <typename T>
-T max(T num1, T num2) {
-    return (num1 > num2) ? num1: num2;
+template <class S>
+S multiply(S a, S b) {
+    return a * b;
 }
 
+//template <typename T>
+//T max(T a, T b) {
+//    return (a > b) ? a: b;
+//}
+
 int main() {
-    int a = 2;
+    int a =2;
     int b = 3;
-    cout << "Square is: " << max(a,b);
+
+    cout << "Multiply: " << multiply(a , b) << endl;
+//    double doubleA {1};
+//    double doubleB {2};
+//    char charA = 'A';
+//    char charB = 'B';
+//    cout << "Integer: " << max(a, b) << endl;
+//    cout << "Double: " << max(doubleA, doubleB) << endl;
+//    cout << "Char: " << max(charA, charB) << endl;
 
     return 0;
 }
