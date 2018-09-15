@@ -11,6 +11,7 @@ using std::endl;
 using std::string;
 using std::cerr;
 
+// template for generic multiplication
 template <class S>
 S multiply(S a, S b) {
     return a * b;
