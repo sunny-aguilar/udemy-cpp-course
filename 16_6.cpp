@@ -15,7 +15,7 @@ int main() {
     //auto vit = vec.begin();
     while (vit != vec.end()) {
         cout << *vit << " ";
-        vic++;
+        vit++;
     }
 
     return 0;
