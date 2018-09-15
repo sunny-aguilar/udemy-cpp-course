@@ -17,6 +17,7 @@ S multiply(S a, S b) {
     return a * b;
 }
 
+// template for generic comparisons
 template <typename T>
 T max(T a, T b) {
     return (a > b) ? a: b;
