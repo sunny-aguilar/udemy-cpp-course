@@ -20,9 +20,16 @@ int main() {
     // assign data member in the structure pointed to by head a value
     head->value = 12.5;
     // display value
-    cout << "List value " << head->value << endl;
+    cout << "First node value " << head->value << endl;
     // signify the end of the list
     head->next = nullptr;
+
+    // add a second note
+    ListNode *secondptr = new ListNode;
+    secondptr->value = 13.5;
+    secondptr->next = nullptr;
+    head->next = secondptr;
+    cout << "Second node value " << secondptr->value << endl;
 
     return 0;
 }
