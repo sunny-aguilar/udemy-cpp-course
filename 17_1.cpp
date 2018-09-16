@@ -5,9 +5,13 @@
 *********************************************************************/
 #include <iostream>
 
+struct ListNode {
+    double value;
+    ListNode *next;
+};
 
 int main() {
-
+    ListNode *head = nullptr;
 
     return 0;
 }
