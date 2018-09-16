@@ -21,6 +21,8 @@ int main() {
     head->value = 12.5;
     // display value
     cout << "List value " << head->value << endl;
+    // signify the end of the list
+    head->next = nullptr;
 
     return 0;
 }
