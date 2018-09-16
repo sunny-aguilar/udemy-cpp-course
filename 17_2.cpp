@@ -18,11 +18,14 @@ struct ListNode{
 };
 
 int main() {
-    ListNode *secondptr = new ListNode(13.5);
-    ListNode *head = new ListNode(12.5, secondptr);
+//    ListNode *secondptr = new ListNode(13.5);
+//    ListNode *head = new ListNode(12.5, secondptr);
 
-    cout << "Head Node Value: " << head->value << endl;
-    cout << "Second Node Value: " << secondptr->value << endl;
+    ListNode *head = new ListNode(13.5);
+    head = new ListNode(12.5, head);
+
+    // traversing the list
+
 
     return 0;
 }
