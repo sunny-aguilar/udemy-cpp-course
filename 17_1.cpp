@@ -4,6 +4,8 @@
 ** Description:     Linked Lists
 *********************************************************************/
 #include <iostream>
+using std::cout;
+using std::endl;
 
 struct ListNode {
     double value;
@@ -12,6 +14,9 @@ struct ListNode {
 
 int main() {
     ListNode *head = nullptr;
+    head = new ListNode;
+    head->value = 12.5;
+    cout << "List value " << head->value << endl;
 
     return 0;
 }
