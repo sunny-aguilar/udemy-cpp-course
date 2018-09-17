@@ -25,7 +25,12 @@ int main() {
     head = new ListNode(12.5, head);
 
     // traversing the list
-
+    ListNode *ptr = head;
+    // display first note value
+    cout << "First Node Value: " << head->value << endl;
+    // move the pointer to the next node
+    ptr = ptr->next;
+    cout << "Second Node Value: " << ptr->value << endl;
 
     return 0;
 }
