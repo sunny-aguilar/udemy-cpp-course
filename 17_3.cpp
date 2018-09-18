@@ -27,8 +27,52 @@ class NumberList{
         void displayList() const;
 };
 
-int main() {
+/*********************************************************************
+** Description:     adds a new element to the end of the linked list
+*********************************************************************/
+void NumberList::add(double number) {
+    if (head == nullptr)
+        head = new ListNode(number);
+    else {                                          // the list is not empty
+        ListNode *nodePtr = head;                   // use nodePtr to traverse the list
+        while (nodePtr->next != nullptr)
+            nodePtr = nodePtr->next;
 
+        nodePtr->next = new ListNode(number);       // nodePtr->next is nullptr so nodePtr points to last node
+                                                    // create a new node and put it after the last node
+    }
+}
+
+/*********************************************************************
+** Description:     display the linked list values stored in list
+*********************************************************************/
+void NumberList::displayList() const {
+    ListNode *nodePtr = head;
+    while (nodePtr) {
+        cout << nodePtr->value << "   ";
+        nodePtr = nodePtr->next;
+    }
+}
+
+/*********************************************************************
+** Description:     destructor deallocates the memory used by the list
+*********************************************************************/
+NumberList::~NumberList() {
+    ListNode *nodePtr = head;
+    while (nodePtr != nullptr) {
+        ListNode *garbage = nodePtr;
+        nodePtr = nodePtr->next;
+        delete garbage;
+    }
+}
+
+int main() {
+    NumberList list;
+    list.add(2.5);
+    list.add(7.9);
+    list.add(12.6);
+    list.displayList();
+    cout << endl;
 
     return 0;
 }
