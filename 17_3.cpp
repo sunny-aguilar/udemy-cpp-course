@@ -20,7 +20,11 @@ class NumberList{
         ListNode *head;
 
     public:
-
+        NumberList() { head = nullptr; }
+        ~NumberList();
+        void add(double number);
+        void remove(double number);
+        void displayList() const;
 };
 
 int main() {
