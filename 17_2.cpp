@@ -15,6 +15,8 @@ struct ListNode{
         this->value = value;
         next = next1;
     }
+
+    virtual ~ListNode();
 };
 
 int main() {
