@@ -13,7 +13,7 @@ class NumberList{
             double value;
             ListNode *next;
             ListNode(double val, ListNode *next1 = nullptr) {
-                value = val;
+                this->value = val;
                 next = next1;
             }
         };
@@ -28,7 +28,7 @@ class NumberList{
 };
 
 /*********************************************************************
-** Description:     adds a new element to the end of the linked list
+** Description:     adds a new node to the end of the linked list
 *********************************************************************/
 void NumberList::add(double number) {
     if (head == nullptr)
@@ -66,12 +66,20 @@ NumberList::~NumberList() {
     }
 }
 
+/*********************************************************************
+** Description:
+*********************************************************************/
+void NumberList::remove(double number) {
+
+}
+
 int main() {
     NumberList list;
     list.add(2.5);
     list.add(7.9);
     list.add(12.6);
     list.displayList();
+    list.remove(12.6);
     cout << endl;
 
     return 0;
