@@ -27,6 +27,11 @@ public:
     void displayList() const;
 };
 
+class SortedNumberList: public NumberList {
+    public:
+        void add(double number);
+};
+
 /*********************************************************************
 ** Description:     adds a new node to the end of the linked list
 *********************************************************************/
