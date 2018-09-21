@@ -79,6 +79,7 @@ NumberList::~NumberList() {
 ** Description:
 *********************************************************************/
 void NumberList::remove(double number) {
+ // remove element
 
 }
 
