@@ -100,6 +100,10 @@ void NumberList::remove(double number) {
             previousNodePtr = nodePtr;
             nodePtr = nodePtr->next;
         }
+
+        // link the previous node to the node after
+        // nodePtr, then delete nodePtr
+
     }
 
 
