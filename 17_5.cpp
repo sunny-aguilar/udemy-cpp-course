@@ -108,8 +108,6 @@ void NumberList::remove(double number) {
             delete nodePtr;
         }
     }
-
-
 }
 
 int main() {
