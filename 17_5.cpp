@@ -109,6 +109,10 @@ int main() {
     list.displayList();
     cout << "\n\n";
 
+    cout << "Now removing the last remaining value.\n";
+    list.remove(2.5);
+    cout << "Here are the values left:";
+    list.displayList();
     cout << endl;
 
     return 0;
