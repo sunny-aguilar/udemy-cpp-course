@@ -92,6 +92,7 @@ void NumberList::remove(double number) {
         delete nodePtr;
     }
     else {
+        // initialize nodePtr to the head of the list
 
     }
 
