@@ -97,7 +97,13 @@ int main() {
     cout << "\n\n";
 
     // demonstrate the remove function
-    list.remove(12.6);
+    cout << "Now removing the value in the middle.\n";
+    list.remove(7.9);
+    cout << "Here are the values left:";
+    list.displayList();
+    cout << "\n\n";
+
+
     cout << endl;
 
     return 0;
