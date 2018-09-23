@@ -91,6 +91,10 @@ void NumberList::remove(double number) {
         head = head->next;
         delete nodePtr;
     }
+    else {
+
+    }
+
 
 }
 
