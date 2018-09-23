@@ -86,7 +86,11 @@ void NumberList::remove(double number) {
     if (!head) return;
 
     // determine if the first node is the one to delete
-
+    if (head->value == number) {
+        nodePtr = head;
+        head = head->next;
+        delete nodePtr;
+    }
 
 }
 
