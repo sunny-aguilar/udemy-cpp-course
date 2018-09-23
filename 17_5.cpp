@@ -96,7 +96,7 @@ void NumberList::remove(double number) {
         nodePtr = head;
 
         // skip nodes whose value member is not number
-        while () {
+        while (nodePtr != nullptr && nodePtr->value != number) {
 
         }
     }
