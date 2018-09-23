@@ -105,6 +105,7 @@ void NumberList::remove(double number) {
         // nodePtr, then delete nodePtr
         if (nodePtr) {
             previousNodePtr->next = nodePtr->next;
+            delete nodePtr;
         }
     }
 
