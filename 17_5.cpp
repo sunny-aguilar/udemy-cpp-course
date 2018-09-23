@@ -80,6 +80,13 @@ NumberList::~NumberList() {
 *********************************************************************/
 void NumberList::remove(double number) {
     // remove element
+    ListNode *nodePtr, *previousNodePtr;
+
+    // if the list is empty, do nothing
+    if (!head) return;
+
+    // determine if the first node is the one to delete
+
 
 }
 
@@ -99,19 +106,19 @@ int main() {
     // demonstrate the remove function
     cout << "Now removing the value in the middle.\n";
     list.remove(7.9);
-    cout << "Here are the values left:";
+    cout << "Here are the values left: ";
     list.displayList();
     cout << "\n\n";
 
     cout << "Now removing the last value.\n";
     list.remove(12.6);
-    cout << "Here are the values left:";
+    cout << "Here are the values left: ";
     list.displayList();
     cout << "\n\n";
 
     cout << "Now removing the last remaining value.\n";
     list.remove(2.5);
-    cout << "Here are the values left:";
+    cout << "Here are the values left: ";
     list.displayList();
     cout << endl;
 
