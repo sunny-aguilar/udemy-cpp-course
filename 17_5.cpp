@@ -111,6 +111,7 @@ void NumberList::remove(double number) {
 }
 
 int main() {
+    // instantiate class
     NumberList list;
 
     // build the list
